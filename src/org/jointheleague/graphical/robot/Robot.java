@@ -343,6 +343,22 @@ public class Robot{
 		penDown();
 	}
 	
+	public int getX() {
+		return (int)xPos;
+	}
+	
+	public int getY() {
+		return (int)yPos;
+	}
+
+	public RobotWindow getWindow() {
+		return window;
+	}
+
+	public static void setWindow(RobotWindow window) {
+		Robot.window = window;
+	}
+
 	public void setY(int newY)
 	{
 		yPos = newY;
